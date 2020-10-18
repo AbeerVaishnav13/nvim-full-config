@@ -16,7 +16,7 @@ noremap ; :
 noremap : ;
 
 " Terminal
-noremap <M-S-t> :vsp<CR>:term fish<CR>:vertical resize -25<CR>A
+noremap <M-t> :vsp<CR>:term fish<CR>:vertical resize -25<CR>A
 tnoremap <M-q> <C-\><C-n>
 
 " Buffer manipulation

@@ -1,3 +1,4 @@
+" Key bindings
 " For remapping keys to provide greater access
 nnoremap <C-c> <Esc>
 vnoremap <C-c> <Esc>

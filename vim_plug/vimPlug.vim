@@ -8,6 +8,9 @@ Plug 'vim-airline/vim-airline-themes'
 " For intellisense
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" Proper syntax highlighting
+Plug 'sheerun/vim-polyglot'
+
 " Colorschemes
 Plug 'morhetz/gruvbox'
 Plug 'tomasiser/vim-code-dark'

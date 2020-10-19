@@ -30,8 +30,8 @@ function! BufDelOrQuit()
 endfunction
 
 nnoremap Q :call BufDelOrQuit()<CR>
-nnoremap J :bp<CR>
-nnoremap K :bn<CR>
+nnoremap <silent> J :bp<CR>
+nnoremap <silent> K :bn<CR>
 
 " Better search
 nnoremap n nzz
@@ -49,7 +49,7 @@ vnoremap <S-Tab> <gv
 
 " Normal mode
 nnoremap <leader>vs :vsplit<space>
-nnoremap <leader>hs :split<space>
+nnoremap <leader>s :split<space>
 
 " Exit commands
 " All modes
@@ -58,13 +58,15 @@ noremap SQ :q!<CR>
 
 " Making split window easier
 " All modes
-noremap <C-w>u <C-w>k
-noremap <C-w>k <C-w>l
-noremap <C-]> <C-w>>
-noremap <C-[> <C-w><
-noremap <C-p> <C-w>+
-noremap <C-o> <C-w>-
-noremap <leader>= <C-w>=
+noremap <M-u> <C-w>k
+noremap <M-k> <C-w>l
+noremap <M-j> <C-w>j
+noremap <M-h> <C-w>h
+noremap <M-]> <C-w>>
+noremap <M-[> <C-w><
+noremap <M-p> <C-w>+
+noremap <M-o> <C-w>-
+noremap <M-=> <C-w>=
 
 " Plugin key mappings
 " FZF key mappings

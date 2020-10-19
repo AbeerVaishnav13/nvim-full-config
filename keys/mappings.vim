@@ -21,12 +21,12 @@ tnoremap <M-q> <C-\><C-n>
 
 " Buffer manipulation
 function! BufDelOrQuit()
-	let s:num_buf = len(filter(range(1, bufnr('$')), 'buflisted(v:val)'))
-	if s:num_buf > 1
-		:bd!
-	else
-		:q
-	endif
+  let s:num_buf = len(filter(range(1, bufnr('$')), 'buflisted(v:val)'))
+  if s:num_buf > 1
+    :bd!
+  else
+    :q
+  endif
 endfunction
 
 nnoremap Q :call BufDelOrQuit()<CR>
@@ -67,6 +67,30 @@ noremap <M-[> <C-w><
 noremap <M-p> <C-w>+
 noremap <M-o> <C-w>-
 noremap <M-=> <C-w>=
+
+" Window orientation
+function! Halign()
+  if &filetype == ''
+    wincmd J
+    resize -10
+  else
+    wincmd K
+    resize +10
+  endif
+endfunction
+
+function! Valign()
+  if &filetype == ''
+    wincmd L
+    vertical resize -25
+  else
+    wincmd H
+    vertical resize +25
+  endif
+endfunction
+
+noremap <silent> <C-k> :call Valign()<CR>
+noremap <silent> <C-h> :call Halign()<CR>
 
 " Plugin key mappings
 " FZF key mappings

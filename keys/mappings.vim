@@ -30,6 +30,12 @@ function! BufDelOrQuit()
 endfunction
 
 nnoremap Q :call BufDelOrQuit()<CR>
+"nnoremap J :bp<CR>
+"nnoremap K :bn<CR>
+
+" Better search
+nnoremap n nzz
+nnoremap N Nzz
 
 " Cursor navigation
 " All modes

@@ -22,14 +22,3 @@ nmap <leader>6 <Plug>AirlineSelectTab6
 nmap <leader>7 <Plug>AirlineSelectTab7
 nmap <leader>8 <Plug>AirlineSelectTab8
 nmap <leader>9 <Plug>AirlineSelectTab9
-
-let g:cur_tab_num = 1
-
-function! TabShift(val)
-	g:cur_tab_num = g:cur_tab_num + a:val
-	exec '<Plug>AirlineSelectTab' . g:cur_tab_num
-endfunction
-
-" Normal mode
-nnoremap gk :call TabShift(1)<CR>
-nnoremap gh :call TabShift(-1)<CR>

@@ -29,8 +29,8 @@ function! BufDelOrQuit()
   endif
 endfunction
 
-nnoremap Q :call BufDelOrQuit()<CR>
-nnoremap <silent> J :bp<CR>
+nnoremap <silent> Q :call BufDelOrQuit()<CR>
+nnoremap <silent> H :bp<CR>
 nnoremap <silent> K :bn<CR>
 
 " Better search
@@ -64,8 +64,8 @@ noremap <M-j> <C-w>j
 noremap <M-h> <C-w>h
 noremap <M-]> <C-w>>
 noremap <M-[> <C-w><
-noremap <M-p> <C-w>+
-noremap <M-o> <C-w>-
+noremap <M-+> <C-w>+
+noremap <M-_> <C-w>-
 noremap <M-=> <C-w>=
 
 " Window orientation

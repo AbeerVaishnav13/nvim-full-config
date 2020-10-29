@@ -23,13 +23,23 @@ tnoremap <M-q> <C-\><C-n>
 function! BufDelOrQuit()
   let s:num_buf = len(filter(range(1, bufnr('$')), 'buflisted(v:val)'))
   if s:num_buf > 1
-    :bd!
+    :bd
   else
     :q
   endif
 endfunction
 
-nnoremap <silent> Q :call BufDelOrQuit()<CR>
+function! BufDelOrQuitImm()
+  let s:num_buf = len(filter(range(1, bufnr('$')), 'buflisted(v:val)'))
+  if s:num_buf > 1
+    :bd!
+  else
+    :q!
+  endif
+endfunction
+
+noremap <silent> Q :call BufDelOrQuit()<CR>
+noremap <silent> SQ :call BufDelOrQuitImm()<CR>
 nnoremap <silent> H :bp<CR>
 nnoremap <silent> K :bn<CR>
 
@@ -54,7 +64,6 @@ nnoremap <leader>s :split<space>
 " Exit commands
 " All modes
 noremap W :w<CR>
-noremap SQ :q!<CR>
 
 " Making split window easier
 " All modes

@@ -1,5 +1,5 @@
 # Vim-config
-This is my vim congiuration file in which I have customised tthe motions according to my convenience.
+This is my vim configuration file in which I have customised tthe motions according to my convenience.
 
 **NOTE:** You should have `VimPlug` installed before setting this config to your `vim` or `neovim`.
 
@@ -9,7 +9,7 @@ This is my vim congiuration file in which I have customised tthe motions accordi
 2. Run `:PlugInstall`.
 
 ### For neovim
-1. Copy the contents of folder `Vim-with-plugins` to your `$HOME/.config.nvim` folder.
+1. Copy the contents of folder `Vim-with-plugins` to your `$HOME/.config/nvim` folder.
 
 2. Run `:PlugInstall`.
 

@@ -9,6 +9,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Proper syntax highlighting
+let g:polyglot_disabled = ['markdown']
 Plug 'sheerun/vim-polyglot'
 
 " Colorschemes

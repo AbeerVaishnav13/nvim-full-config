@@ -15,10 +15,6 @@ nnoremap <leader>sp :set spell!<CR>
 noremap ; :
 noremap : ;
 
-" Terminal
-noremap <M-t> :vsp<CR>:term fish<CR>:vertical resize -25<CR>A
-tnoremap <M-q> <C-\><C-n>
-
 " Buffer manipulation
 function! BufDelOrQuit()
   let s:num_buf = len(filter(range(1, bufnr('$')), 'buflisted(v:val)'))
@@ -47,7 +43,7 @@ nnoremap <silent> K :bn<CR>
 nnoremap n nzz
 nnoremap N Nzz
 
-" Cursor navigation
+" Cursor navigation (HJUK instead of HJKL)
 " All modes
 noremap u k
 noremap k l
@@ -67,15 +63,16 @@ noremap W :w<CR>
 
 " Making split window easier
 " All modes
-noremap <M-u> <C-w>k
-noremap <M-k> <C-w>l
-noremap <M-j> <C-w>j
-noremap <M-h> <C-w>h
-noremap <M-]> <C-w>>
-noremap <M-[> <C-w><
-noremap <M-+> <C-w>+
-noremap <M-_> <C-w>-
-noremap <M-=> <C-w>=
+noremap <C-u> <C-w>k
+noremap <C-k> <C-w>l
+noremap <C-j> <C-w>j
+noremap <C-h> <C-w>h
+noremap <C-r> <C-w>r
+noremap <C-]> <C-w>>
+noremap <C-[> <C-w><
+noremap <C-+> <C-w>+
+noremap <C-_> <C-w>-
+noremap <C-=> <C-w>=
 
 " Window orientation
 function! Halign()
@@ -98,8 +95,12 @@ function! Valign()
   endif
 endfunction
 
-noremap <silent> <C-k> :call Valign()<CR>
-noremap <silent> <C-h> :call Halign()<CR>
+noremap <leader>k :call Valign()<CR>
+noremap <leader>h :call Halign()<CR>
+
+" Terminal
+noremap <C-t> :vsp<CR>:term fish<CR>:vertical resize -25<CR>A
+tnoremap <C-q> <C-\><C-n>
 
 " Plugin key mappings
 " FZF key mappings

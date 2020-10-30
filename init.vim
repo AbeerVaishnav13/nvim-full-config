@@ -21,7 +21,7 @@ set mouse=a
 set noshowmode
 set splitbelow
 
-let mapleader=","
+let mapleader=" "
 
 " Clear all registers
 command! WipeRegs let regs='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/-*+"' | let i=0 | while (i < strlen(regs)) | exec 'let @'.regs[i].'=""' | let i=i+1 | endwhile | unlet regs

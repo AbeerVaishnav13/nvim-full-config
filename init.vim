@@ -6,7 +6,6 @@ set softtabstop=4
 set clipboard+=unnamedplus
 syntax on
 set encoding=utf8
-set nohlsearch
 set scrolloff=10
 set smartcase
 set smartindent

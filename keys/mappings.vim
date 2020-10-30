@@ -1,7 +1,7 @@
 " Key bindings
 " For remapping keys to provide greater access
-nnoremap <C-c> <Esc>
-vnoremap <C-c> <Esc>
+nnoremap <silent> <C-c> <Esc>:noh<CR>
+vnoremap <silent> <C-c> <Esc>:noh<CR>
 snoremap <C-c> <Esc>
 inoremap <C-c> <Esc>
 nnoremap <Esc> <C-c>

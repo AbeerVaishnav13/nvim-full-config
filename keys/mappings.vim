@@ -67,7 +67,6 @@ noremap <C-u> <C-w>k
 noremap <C-k> <C-w>l
 noremap <C-j> <C-w>j
 noremap <C-h> <C-w>h
-noremap <C-r> <C-w>r
 noremap <C-]> <C-w>>
 noremap <C-[> <C-w><
 noremap <C-+> <C-w>+

@@ -35,5 +35,6 @@ augroup filetypedetect
 	au BufNewFile,BufRead *.slq		command! Runsilq call CompileSILQ('y')
 	au BufNewFile,BufRead *.md		command! -nargs=1 Convdoc call ConvertDoc(<f-args>)
 	au BufWrite *.md				setf markdown
+	au BufNewFile,BufRead *.md		let g:gruvbox_bold=1
 	au BufNewFile,BufRead *.asm		setf nasm
 augroup END

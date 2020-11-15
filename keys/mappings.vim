@@ -9,6 +9,9 @@ vnoremap <Esc> <C-c>
 snoremap <Esc> <C-c>
 inoremap <Esc> <C-c>
 
+" Reload config
+nnoremap <silent> ,, :source /Users/abeervaishnav/.config/nvim/init.vim<CR>
+
 nnoremap S :%s//g<Left><Left>
 vnoremap S :s//g<Left><Left>
 nnoremap <leader>sp :set spell!<CR>

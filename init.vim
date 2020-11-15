@@ -32,12 +32,12 @@ set wildmenu		" Shows multiple matches on a pop-up menu
 
 " Sourcing files for extra functionality
 source /Users/abeervaishnav/.config/nvim/vim_plug/vimPlug.vim
+source /Users/abeervaishnav/.config/nvim/Colors/Colorscheme.vim
 source /Users/abeervaishnav/.config/nvim/plug-config/coc.vim
 source /Users/abeervaishnav/.config/nvim/plug-config/fzf.vim
-source /Users/abeervaishnav/.config/nvim/Colors/Colorscheme.vim
 source /Users/abeervaishnav/.config/nvim/keys/mappings.vim
 source /Users/abeervaishnav/.config/nvim/filetype/filePlug.vim
 source /Users/abeervaishnav/.config/nvim/plug-config/airline.vim
 
-hi Normal ctermbg=NONE guibg=NONE
-hi NonText ctermbg=NONE guibg=NONE
+autocmd VimEnter * hi Normal ctermbg=NONE guibg=NONE
+autocmd VimEnter * hi NonText ctermbg=NONE guibg=NONE

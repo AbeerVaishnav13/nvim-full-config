@@ -23,7 +23,17 @@ set splitbelow
 let mapleader=" "
 
 " Clear all registers
-command! WipeRegs let regs='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/-*+"' | let i=0 | while (i < strlen(regs)) | exec 'let @'.regs[i].'=""' | let i=i+1 | endwhile | unlet regs
+function! WR()
+	let regs='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/-*+"'
+	let i=0
+	while (i < strlen(regs))
+		exec 'let @'.regs[i].'=""'
+		let i=i+1
+	endwhile
+	unlet regs
+endfunction
+
+command! WipeRegs call WR()
 
 " Options for fuzzy search
 set nocompatible	" Limit search to the project dir

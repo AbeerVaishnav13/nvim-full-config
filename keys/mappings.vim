@@ -101,7 +101,7 @@ noremap <leader>k :call Valign()<CR>
 noremap <leader>h :call Halign()<CR>
 
 " Terminal
-noremap <C-t> :vsp<CR>:term fish<CR>:vertical resize -25<CR>A
+noremap <C-t> :vsp<CR>:term fish<CR>:vertical resize -25<CR>
 tnoremap <C-q> <C-\><C-n>
 
 " Plugin key mappings

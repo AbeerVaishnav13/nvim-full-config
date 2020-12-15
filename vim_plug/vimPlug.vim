@@ -17,6 +17,7 @@ Plug 'morhetz/gruvbox'
 Plug 'tomasiser/vim-code-dark'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'mukiwu/vim-tomorrow-night'
+Plug 'tyrannicaltoucan/vim-quantum'
 
 " FZF stuff
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }

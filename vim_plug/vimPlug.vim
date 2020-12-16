@@ -20,6 +20,7 @@ Plug 'mukiwu/vim-tomorrow-night'
 Plug 'tyrannicaltoucan/vim-quantum'
 Plug 'trusktr/seti.vim'
 Plug 'joshdick/onedark.vim'
+Plug 'chriskempson/base16-vim'
 
 " FZF stuff
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }

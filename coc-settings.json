@@ -1,4 +1,12 @@
 {
-	"clangd.path": "/Users/abeervaishnav/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd",
-	"clangd.checkUpdates": true
+    "clangd.path": "/Users/abeervaishnav/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd",
+    "clangd.checkUpdates": true,
+    "languageserver": {
+        "zig": {
+            "command": "zls",
+            "filetypes": [
+                "zig"
+            ]
+        }
+    }
 }

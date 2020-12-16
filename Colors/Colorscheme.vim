@@ -1,8 +1,8 @@
 " Colorscheme settings
 set background=dark
+set termguicolors
 
 " Gruvbox colorscheme settings
-set termguicolors
 let g:gruvbox_invert_selection=0
 let g:quantum_italics=1
 let g:gruvbox_bold=0
@@ -12,7 +12,6 @@ let g:gruvbox_italicize_comments=1
 colorscheme gruvbox
 
 " Quantum colorscheme settings
-" set termguicolors
 " let g:quantum_black=1
 " colorscheme quantum
 

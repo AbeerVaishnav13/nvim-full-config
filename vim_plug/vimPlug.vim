@@ -18,7 +18,6 @@ Plug 'tomasiser/vim-code-dark'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'mukiwu/vim-tomorrow-night'
 Plug 'tyrannicaltoucan/vim-quantum'
-Plug 'trusktr/seti.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'chriskempson/base16-vim'
 

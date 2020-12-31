@@ -51,6 +51,9 @@ nnoremap N Nzz
 noremap u k
 noremap k l
 noremap U u
+noremap 8 0
+noremap 9 ^
+noremap 0 $
 
 " Indentation
 vnoremap <Tab> >gv
@@ -109,6 +112,6 @@ tnoremap <C-q> <C-\><C-n>
 nnoremap <C-f> :FZF<CR>
 
 " Fugitive key mappings
-nnoremap <leader>gh :diffget //3<CR>
-nnoremap <leader>gf :diffget //2<CR>
+" nnoremap <leader>gh :diffget //3<CR>
+" nnoremap <leader>gf :diffget //2<CR>
 nnoremap <leader>gs :G<CR>

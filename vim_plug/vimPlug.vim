@@ -38,7 +38,4 @@ Plug 'tpope/vim-fugitive'
 " Hex colors
 Plug 'ap/vim-css-color'
 
-" Auto-pair brackets
-Plug 'jiangmiao/auto-pairs'
-
 call plug#end()

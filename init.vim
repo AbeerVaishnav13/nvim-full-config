@@ -46,6 +46,7 @@ source /Users/abeervaishnav/.config/nvim/Colors/Colorscheme.vim
 source /Users/abeervaishnav/.config/nvim/plug-config/coc.vim
 source /Users/abeervaishnav/.config/nvim/plug-config/fzf.vim
 source /Users/abeervaishnav/.config/nvim/keys/mappings.vim
+source /Users/abeervaishnav/.config/nvim/keys/autopair.vim
 source /Users/abeervaishnav/.config/nvim/filetype/filePlug.vim
 source /Users/abeervaishnav/.config/nvim/plug-config/airline.vim
 

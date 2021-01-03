@@ -105,13 +105,13 @@ noremap <leader>h :call Halign()<CR>
 
 " Terminal
 noremap <C-t> :vsp<CR>:term fish<CR>:vertical resize -25<CR>
-tnoremap <C-q> <C-\><C-n>
+tnoremap <Esc> <C-\><C-n>
 
 " Plugin key mappings
 " FZF key mappings
 nnoremap <C-f> :FZF<CR>
 
 " Fugitive key mappings
-" nnoremap <leader>gh :diffget //3<CR>
-" nnoremap <leader>gf :diffget //2<CR>
+nnoremap <leader>gh :diffget //3<CR>
+nnoremap <leader>gf :diffget //2<CR>
 nnoremap <leader>gs :G<CR>

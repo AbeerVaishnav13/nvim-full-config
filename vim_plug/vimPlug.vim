@@ -38,4 +38,7 @@ Plug 'tpope/vim-fugitive'
 " Hex colors
 Plug 'ap/vim-css-color'
 
+" Auto pairs
+Plug 'AbeerVaishnav13/vim-pairs-basic'
+
 call plug#end()

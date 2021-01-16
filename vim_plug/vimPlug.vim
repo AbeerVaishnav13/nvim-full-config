@@ -41,4 +41,7 @@ Plug 'ap/vim-css-color'
 " Auto pairs
 Plug 'AbeerVaishnav13/vim-pairs-basic'
 
+" Float-term
+Plug 'voldikss/vim-floaterm'
+
 call plug#end()

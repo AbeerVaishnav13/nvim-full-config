@@ -51,8 +51,6 @@ nnoremap N Nzz
 noremap u k
 noremap k l
 noremap U u
-noremap 6 ^
-noremap 4 $
 
 " Indentation
 vnoremap <Tab> >gv
@@ -103,7 +101,8 @@ noremap <leader>k :call Valign()<CR>
 noremap <leader>h :call Halign()<CR>
 
 " Terminal
-noremap <C-t> :vsp<CR>:term fish<CR>:vertical resize -25<CR>
+" :vsp<CR>:term fish<CR>:vertical resize -25<CR>
+noremap <silent> <C-t> :FloatermToggle<CR>
 tnoremap <Esc> <C-\><C-n>
 
 " Plugin key mappings

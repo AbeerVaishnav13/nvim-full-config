@@ -19,6 +19,7 @@ set t_ut=
 set mouse=a
 set noshowmode
 set splitbelow
+set cc=100
 
 let mapleader=" "
 
